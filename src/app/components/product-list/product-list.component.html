@@ -1,0 +1,43 @@
+<div class="container">
+    <!-- <h1>{{ title }}</h1> -->
+
+    <!-- <input type="text" (input)="setValue($event)" />
+    <br /> -->
+    <!-- {{ valueInput }} -->
+
+    <hr />
+    <!-- <div *ngIf="status">Hien thi</div> -->
+    <!-- <button (click)="toggle()">Toggled</button> -->
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Anh</th>
+                <th>Ten</th>
+                <th>Gia</th>
+                <th><button class="btn btn-danger">
+                        <a style="color: white; text-decoration: none; display:block;" routerLink="add">add</a>
+                    </button></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let product of products; index as i">
+                <td>{{ i + 1 }}</td>
+                <td><img [src]="product.img" alt="" /></td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="removeItem(product.id)!">
+                        Xóa
+                    </button>
+                    <button class="btn btn-danger">
+                        <a style="color: white; text-decoration: none; display:block;"
+                            routerLink="{{product.id}}/edit">Sua</a>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

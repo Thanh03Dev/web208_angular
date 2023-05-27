@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "name": "Sản phảm demo 12",
+      "price": 500,
+      "img": "https://picsum.photos/200/200",
+      "id": 2
+    },
+    {
+      "name": "Sản phảm demo 3",
+      "price": 500,
+      "img": "https://picsum.photos/200/200",
+      "id": 3
+    },
+    {
+      "name": "Sản phảm demo 4",
+      "price": 500,
+      "img": "https://picsum.photos/200/200",
+      "id": 4
+    },
+    {
+      "name": "1234",
+      "price": "1111",
+      "id": 5
+    },
+    {
+      "name": "1234qqq",
+      "price": "1111",
+      "id": 6
+    }
+  ]
+}
